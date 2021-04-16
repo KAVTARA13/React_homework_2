@@ -1,3 +1,5 @@
+import PropTypes from 'prop-types';
+
 function Post({ post }) {
   return (
     <li className="list-group-item d-flex justify-content-between align-items-start">
@@ -9,4 +11,7 @@ function Post({ post }) {
   );
 }
 
+Post.propTypes = {
+  user: PropTypes.object.isRequired,
+};
 export default Post;

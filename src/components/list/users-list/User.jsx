@@ -1,3 +1,5 @@
+import PropTypes from 'prop-types';
+
 function User({ user }) {
   return (
     <div className="list-group-item list-group-item-action ">
@@ -10,5 +12,9 @@ function User({ user }) {
     </div>
   );
 }
+
+User.propTypes = {
+  user: PropTypes.object.isRequired,
+};
 
 export default User;
